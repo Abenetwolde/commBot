@@ -13,7 +13,7 @@ const post = async (req, res) => {
   if (user) {
     var token = jwt.sign(
       { id: user.id, user: user.name, role: "admin" },
-      process.env["SECRET_TOKEN"]
+      "SECRETTOKEN"
     );
     res.status(200).send({ isAuth: true, accessToken: token });
   } else {

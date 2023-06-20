@@ -5,7 +5,7 @@ module.exports = (req, res, next) => {
   if (jwtToken && jwtToken.includes("JWT ")) {
     jwt.verify(
       jwtToken.split(" ")[1],
-      process.env["SECRET_TOKEN"],
+      "SECRETTOKEN",
       function (err, decoded) {
         if (!err) {
           req.user = decoded;

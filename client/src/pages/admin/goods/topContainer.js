@@ -48,7 +48,7 @@ const Default = memo((props) => {
     <Box sx={{ display: "flex", alignItems: "center", width: "100%" }}>
       <Autocomplete
         name="articleId"
-        caption="Артикул"
+        caption="vendor code"
         useGet={useGetAll}
         data={data}
         onChange={handleChange}
@@ -57,7 +57,7 @@ const Default = memo((props) => {
       <Input
         sx={{ marginLeft: 1 }}
         name="search"
-        caption="Поиск по названию"
+        caption="Search by name"
         data={data}
         onChange={handleChange}
         changeOnEnter
