@@ -6,6 +6,14 @@ import { isFunc } from "@utils";
 const urlBase = "http://localhost:4000/api/articles";
 
 const useGetAll = () => {
+  // axios.get('http://localhost:4000/api/articles?limit=10&offset=0')
+  // .then(response => {
+  //   // Handle the response here
+  // })
+  // .catch(error => {
+  //   // Handle the error here
+  // });
+  
   const { get, loading, response, abort } = useParamsApi(urlBase);
 
   return [

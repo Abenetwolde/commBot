@@ -2,6 +2,7 @@ require("dotenv").config();
 const { Router } = require("express");
 const app = require("./config/express")();
 const { Telegraf } = require("telegraf");
+
 const { loader, sleep } = require("./utils");
 const { commands } = require("./utils/telegrafProto");
 const ws = require("./webSocket");
@@ -35,4 +36,6 @@ bot.on("pre_checkout_query", async(ctx, test) => {
 
 bot.catch(console.log);
 bot.launch();
+// Set up CORS options
+
 app.listen(4000);
