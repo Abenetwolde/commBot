@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import useParamsApi from "./useParamsAPI";
 import { isFunc } from "@utils";
 
-const urlBase = "/api/client";
+const urlBase = "http://localhost:4000/api/client";
 
 const useGetById = (props = {}) => {
   const { get, loading, response } = useParamsApi(urlBase);

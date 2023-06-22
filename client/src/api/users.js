@@ -3,7 +3,7 @@ import { useFetch } from "use-http";
 import useParamsApi from "./useParamsAPI";
 import { isFunc } from "@utils";
 
-const urlBase = "/api/users";
+const urlBase = "http://localhost:4000/api/botAnswer/senInvoice/api/users";
 
 const useGet = (countPerPage = 0, currentPage) => {
   const [page, setPage] = useState(currentPage ? currentPage : 1);

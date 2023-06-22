@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import useParamsApi from "./useParamsAPI";
 
 const useAuth = () => {
-  const { post, loading, response } = useParamsApi("/api/auth");
+  const { post, loading, response } = useParamsApi("http://localhost:4000/api/auth");
 
   return [
     useCallback(

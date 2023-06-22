@@ -3,7 +3,7 @@ import { useFetch } from "use-http";
 import useParamsApi from "./useParamsAPI";
 import { isFunc } from "@utils";
 
-const urlBase = "/api/orders";
+const urlBase = "http://localhost:4000/api/orders";
 
 const useGetAll = () => {
   const { get, loading, response, abort } = useParamsApi(urlBase);

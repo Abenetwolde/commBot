@@ -3,7 +3,7 @@ import useParamsApi from "./useParamsAPI";
 
 const def = (props) => {
   const { correctRouter, adminPages } = props;
-  const { get, loading, response } = useParamsApi("/api/access");
+  const { get, loading, response } = useParamsApi("http://localhost:4000/api/access");
 
   return [
     useCallback(

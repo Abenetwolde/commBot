@@ -34,7 +34,7 @@ const img = [
   { isAnimate: false, img: coke },
 ];
 
-const urlBase = "/api/goods";
+const urlBase = "http://localhost:4000/api/goods";
 
 const useGet = (countPerPage = 0, articleId, notIcon = false) => {
   const [page, setPage] = useState(1);
