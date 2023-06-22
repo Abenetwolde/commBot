@@ -30,7 +30,7 @@ const test = async (ctx) => {
       caption: "Caption",
       parse_mode: "Markdown",
       ...Markup.inlineKeyboard([
-        Markup.button.webApp("Лайк подписка :)", `https://gleeful-ganache-9d2500.netlify.app/`),
+        Markup.button.webApp("Лайк подписка :)", `https://main--jocular-choux-6a6025.netlify.app/`),
       ]),
     })
     .catch((error) => {
