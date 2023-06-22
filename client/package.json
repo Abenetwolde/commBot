@@ -2,7 +2,7 @@
   "name": "telegrambotgui",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:4000",
+  "proxy": "https://main--jocular-choux-6a6025.netlify.app/",
   "dependencies": {
     "@craco/craco": "^5.9.0",
     "@emotion/react": "^11.9.0",
