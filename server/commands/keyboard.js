@@ -29,7 +29,7 @@ const test = async (ctx) => {
 
 module.exports = (bot) => {
   bot.newCommand(
-    { command: "sendinvoice", description: "Тест SendData" },
+    { command: "sendinvoice", description: "SendData test" },
     test
   );
 };

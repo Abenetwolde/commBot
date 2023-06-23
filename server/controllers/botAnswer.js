@@ -113,7 +113,7 @@ const postSendInvoice = (bot) => {
     const { goods } = req.body;
     axios
       .post(
-        `https://api.telegram.org/bot${process.env.BOT_ID}/createInvoiceLink`,
+        `https://api.telegram.org/bot5972521271:AAHuq5fIqRhaz2DmPpoWaGUdK4TB-7DMmS8createInvoiceLink`,
         getInvoice(100, Array.isArray(goods) ? goods : [], "TestOrder")
       )
       .then((response) => {
