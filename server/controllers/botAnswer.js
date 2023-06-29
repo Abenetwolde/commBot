@@ -7,7 +7,7 @@ const compositionOrder = models.compositionOrder;
 
 const getInvoice = (id, goods, orderId) => {
   const invoice = {
-    provider_token: "5972521271:AAHuq5fIqRhaz2DmPpoWaGUdK4TB-7DMmS8",
+    provider_token: "CHAPUBK_TEST-vjZP3qdhMGcbCd43O7hz5zjsz41tJ8Oe",
     start_parameter: "get_access", //Уникальный параметр глубинных ссылок. Если оставить поле пустым, переадресованные копии отправленного сообщения будут иметь кнопку «Оплатить», позволяющую нескольким пользователям производить оплату непосредственно из пересылаемого сообщения, используя один и тот же счет. Если не пусто, перенаправленные копии отправленного сообщения будут иметь кнопку URL с глубокой ссылкой на бота (вместо кнопки оплаты) со значением, используемым в качестве начального параметра.
     title: "Привет YouTube",
     description: "YouTube",

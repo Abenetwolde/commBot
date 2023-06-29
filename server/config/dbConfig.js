@@ -16,9 +16,9 @@ const dev = {
   //   username: "admin",
   // password: "YWv6TSuc1jyi4C3PPmrFKts1bf2R3wND",
  
-  host: "dpg-cibdviqip7vnjjjghncg-a",
-  port: 5432,
-  dialect: "postgres",
+  // host: "dpg-cibdviqip7vnjjjghncg-a",
+  // port: 5432,
+  // dialect: "postgres",
   username: "postgres",
   password: "1234",
   database: "Telegram",

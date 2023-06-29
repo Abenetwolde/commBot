@@ -2,7 +2,9 @@
 
 const fs = require("fs");
 const path = require("path");
+const { ARRAY } = require("sequelize");
 const Sequelize = require("sequelize");
+const { Router } = require("telegraf");
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || "development";
 const config = require(__dirname + "/../../config/dbConfig")[env];
@@ -14,6 +16,7 @@ if (config.use_env_variable) {
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
+
 
 const defOptions = { paranoid: true };
 
