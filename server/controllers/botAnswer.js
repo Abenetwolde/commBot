@@ -11,7 +11,7 @@ const getInvoice = (id, goods, orderId) => {
     start_parameter: "get_access", //Уникальный параметр глубинных ссылок. Если оставить поле пустым, переадресованные копии отправленного сообщения будут иметь кнопку «Оплатить», позволяющую нескольким пользователям производить оплату непосредственно из пересылаемого сообщения, используя один и тот же счет. Если не пусто, перенаправленные копии отправленного сообщения будут иметь кнопку URL с глубокой ссылкой на бота (вместо кнопки оплаты) со значением, используемым в качестве начального параметра.
     title: "Привет YouTube",
     description: "YouTube",
-    currency: "USD",
+    currency: "ETB",
     prices: goods.map((item) => ({
       label: `${item.caption} x ${item.count}`,
       amount: (item.sale * item.count * 100).toFixed(0),
@@ -113,7 +113,7 @@ const postSendInvoice = (bot) => {
     const { goods } = req.body;
     axios
       .post(
-        `https://api.telegram.org/bot5972521271:AAHuq5fIqRhaz2DmPpoWaGUdK4TB-7DMmS8/createInvoiceLink`,
+        `https://api.telegram.org/bot6382394942:AAHvhAH_qjpcxrTeL8B0q2V273HBmBujFeE/createInvoiceLink`,
         getInvoice(100, Array.isArray(goods) ? goods : [], "TestOrder")
       )
       .then((response) => {

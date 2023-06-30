@@ -7,7 +7,7 @@ const { loader, sleep } = require("./utils");
 const { commands } = require("./utils/telegrafProto");
 const ws = require("./webSocket");
 
-const bot = new Telegraf("5972521271:AAHuq5fIqRhaz2DmPpoWaGUdK4TB-7DMmS8");
+const bot = new Telegraf("6382394942:AAHvhAH_qjpcxrTeL8B0q2V273HBmBujFeE");
 
 // typeof ws === "function" && ws(app, bot);
 
