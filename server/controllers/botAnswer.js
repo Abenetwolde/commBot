@@ -7,7 +7,7 @@ const compositionOrder = models.compositionOrder;
 
 const getInvoice = (id, goods, orderId) => {
   const invoice = {
-    provider_token: "CHAPUBK_TEST-vjZP3qdhMGcbCd43O7hz5zjsz41tJ8Oe",
+    provider_token: "6141645565:TEST:MHeGovoNnMWxmSOna3Yc",
     start_parameter: "get_access", //Уникальный параметр глубинных ссылок. Если оставить поле пустым, переадресованные копии отправленного сообщения будут иметь кнопку «Оплатить», позволяющую нескольким пользователям производить оплату непосредственно из пересылаемого сообщения, используя один и тот же счет. Если не пусто, перенаправленные копии отправленного сообщения будут иметь кнопку URL с глубокой ссылкой на бота (вместо кнопки оплаты) со значением, используемым в качестве начального параметра.
     title: "Привет YouTube",
     description: "YouTube",
@@ -78,7 +78,7 @@ const post = (bot) => {
       .answerWebAppQuery(query_id, {
         type: "article",
         id: query_id,
-        title: "YOUTUBE",
+        title: "Product",
         input_message_content: {
           message_text: `Order summary:\n\n${goods
             .map(
@@ -113,7 +113,7 @@ const postSendInvoice = (bot) => {
     const { goods } = req.body;
     axios
       .post(
-        `https://api.telegram.org/bot6382394942:AAHvhAH_qjpcxrTeL8B0q2V273HBmBujFeE/createInvoiceLink`,
+        `https://api.telegram.org/bot6343517140:AAGlOhiGW0r41gJiwQ8Gn6pneQ0Bovegi48/createInvoiceLink`,
         getInvoice(100, Array.isArray(goods) ? goods : [], "TestOrder")
       )
       .then((response) => {
